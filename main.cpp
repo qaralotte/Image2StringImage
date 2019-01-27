@@ -15,7 +15,7 @@ int main() {
 
     cv::Mat rgimg;
     cv::namedWindow("resize", cv::WINDOW_AUTOSIZE);
-    cv::resize(gimg,rgimg,cv::Size(gimg.rows / 2,gimg.cols / 2));
+    cv::resize(gimg,rgimg,cv::Size(gimg.rows / 16,gimg.cols / 16));
     cv::imshow("resize",rgimg); //Resize & Gray
 
     std::vector<std::string> key{"M","A","/"}; //Composition

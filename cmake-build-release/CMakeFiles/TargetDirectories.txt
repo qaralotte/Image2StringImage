@@ -1,0 +1,3 @@
+/home/wddsauo/CLionProjects/Image2StringImage/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/home/wddsauo/CLionProjects/Image2StringImage/cmake-build-release/CMakeFiles/Image2StringImage.dir
+/home/wddsauo/CLionProjects/Image2StringImage/cmake-build-release/CMakeFiles/edit_cache.dir
