@@ -1,5 +1,5 @@
 #include <opencv2/opencv.hpp>
-#include <vector>
+#include <string>
 #include <iostream>
 #include <fstream>
 
@@ -15,19 +15,19 @@ int main() {
 
     cv::Mat rgimg;
     cv::namedWindow("resize", cv::WINDOW_AUTOSIZE);
-    cv::resize(gimg,rgimg,cv::Size(gimg.rows / 16,gimg.cols / 16));
+    cv::resize(gimg,rgimg,cv::Size(gimg.rows / 18,gimg.cols / 18));
     cv::imshow("resize",rgimg); //Resize & Gray
 
-    std::vector<std::string> key{"M","A","/"}; //Composition
+    std::string key = "@#&$%*o!;."; //Composition
     std::string result = "";
-    float unit = (256.0 + 1) / 2;
+    float unit = 256 / 10;
 
     int row = rgimg.rows; //Row
     int col = rgimg.cols; //Column
 
     for (int x = 0; x < row; ++x) {
         for (int y = 0; y < col; ++y) {
-            result += key[int(rgimg.at<uchar>(x,y) / unit)];
+            result += key.substr(int(rgimg.at<uchar>(x,y) / unit),1);
         }
         result += "\n";
     }
