@@ -3,7 +3,7 @@
 
 **Image:**
 
-![Image](https://raw.githubusercontent.com/Wddsauo/Image2StringImage/master/cmake-build-release/logo.png)
+![Image](https://raw.githubusercontent.com/qaralotte/Image2StringImage/master/cmake-build-release/logo.png)
 
 **StringImage:**
 
